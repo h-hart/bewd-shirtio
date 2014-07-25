@@ -1,0 +1,18 @@
+<div>
+<h2>
+	All shirts
+</h2>
+
+<div class="row">
+	<% @shirts.each do |shirt| %>
+		<div class="col-md-2 shirt" style="background:<%= shirt.color %>">
+				<mark>
+					Color: <%=shirt.color%><br />
+					Brand: <%=shirt.brand%><br />
+					Size: <%=shirt.size%><br />
+					Neck line: <%=shirt.neck_line%><br />
+				</mark>
+		</div>
+	<% end %>
+</div>
+</div>
